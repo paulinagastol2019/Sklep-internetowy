@@ -1,0 +1,58 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{ margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;}
+
+.header {
+    background-color:rgb(229, 190, 196);
+    height: 5vh;   /*poprawić ponieważ nav nie widzi hedera*/
+    font-size: 3vh;
+  
+}
+
+.login {
+    text-align: right;
+}
+
+.login a {
+    margin-right: 2%;
+    text-align: center;
+    color: black;
+}
+
+.discribe {
+    text-decoration: none;
+    color: black;
+}
+.form {
+    font-size: 100%px;
+}
+
+/* produkty zrób transition ease dla przycisków "dodaj do koszyka"*/
+
+    .footer{
+    height: 60vh;
+    font-family: 'Roboto', sans-serif;
+    color: blanchedalmond;
+    background-color: rgb(229, 190, 196);
+    }
+    .footer h4 {
+        font-size: 120%;
+    }
+    .footer p {
+        font-size: 100%;;
+    }
+    .copyright {
+        text-align: center;
+        height: 20%;
+    }
+
+    .copyright p {
+        color: white;
+        font-size: 60%;
+        text-align: center;
+        height: 20%;
+    }

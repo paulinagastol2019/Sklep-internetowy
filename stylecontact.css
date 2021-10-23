@@ -1,0 +1,279 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    position:relative;
+}
+i{
+    width: 100%;
+    text-align: center;
+    color: hotpink;
+    padding: 15%;
+    font-size: 40px;
+}
+
+h4{
+    text-align: center;
+    width: 100%;
+}
+
+p{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15%;
+}
+
+.containerform{   /*cały kontener na dormularz wraz z tytułem*/
+    width: 100%;
+    background-color: rgba(255,192,203,0.8);
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 10px;
+
+}
+.formtitle {  /* tytuł formularza */
+    width: 100%;
+    padding: 1vh;
+    text-align: center;
+    font-size: 30px;
+}
+
+.in1{  /* pole do wpisywania imienia i e-maila*/
+    width: 30vw;
+    height: 4vh;;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5vh;
+    border-style: none;
+
+}
+
+.in2{  /* pole wpisywania wiadomości*/
+    width: 30vw;
+    height: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+}
+
+.btnform {  /* przycisk formularza kontaktowego*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.7vh;
+    background-color:hotpink;
+    color: white;
+    box-shadow: none;
+    border-radius: 20px;
+    margin-top: 2vh;
+    width: 15vh;
+    border-style: none;
+
+}
+
+.btnform:hover{
+    background-color: deeppink;
+    transition: ease 0.5s;
+}
+
+.container a {
+    text-align: center;
+    width: 100%;
+}
+
+.contact{
+    background-image: url('images/collage-of-feminine-colourful-cosmetics-on-white-desk.jpg');
+    background-size: cover;
+    background-position: top center;
+    color: white;
+    background-attachment: fixed;
+}
+.bg {
+    padding: 30px 70px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.discribe {
+    color: hotpink;
+    font-size: 20px;
+}
+.discribe:hover {
+    color: deeppink;}
+
+.footer{
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: hotpink;
+}
+
+.footer .container .row div{
+    display: block;
+    margin-bottom: 25px;
+}
+.footer h4 {
+    font-size: 120%;
+    display: block;
+}
+
+.copyright p {
+    display: inline-block;
+    margin:0;
+    padding: 0;
+}
+
+.error{
+    color: red;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.potwierdzenie{
+    background-color: pink;
+}
+.potwierdzenie h4{
+    font-size: 30px;
+    padding-top: 9%;
+    display: block;
+}
+.potwierdzenie p{
+    display: block;
+    font-size: 15px;
+}
+.potwierdzenie a{
+    display: block;
+    background-color: white;
+    text-align: center;
+    height: 50px;
+    color: deeppink;
+    font-size: 30px;
+}
+
+.login {
+    text-align: center;
+    padding: 5%;
+    font-size: 20px;
+}
+.bg1 {
+    padding: 70px 70px;
+    background-color: rgba(246, 185, 194, 0.53);
+}
+
+.rejestr{
+    text-align: center;
+    padding: 3%;
+    font-size: 16px;
+    background-color: white;
+}
+
+.btnzar, .btnlog{
+    height: 40px;
+    width: 130px;
+    padding: 6px;
+    background-color: deeppink;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid deeppink;
+}
+
+.btnzar:hover{
+    background-color: #d70674;
+    transition: ease 1s;
+}
+.btnlog:hover{
+    background-color: #d70674;
+    transition: ease 1s;
+}
+
+.rejestr div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel {
+    background-color:rgba(246, 185, 194, 0.53);
+    min-height: 60%;
+    font-size: 25px;
+}
+
+.panel p{
+    padding: 3%;
+}
+
+.podziekowanie{
+    display: block;
+    background-color: white;
+    text-align: center;
+    height: 60%;
+    color: deeppink;
+}
+
+.podziekowanie h4{
+    padding: 3%;
+    font-size: 40px;
+
+}
+
+.podziekowanie a{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: deeppink;
+    padding: 2%;
+}
+
+.infoozamowieniu{
+    width: 70%;
+    height: 40%;
+    padding: 3%;
+    background-color: rgba(246, 185, 194, 0.53);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.infoozamowieniu h4{
+padding: 2%;
+}
+
+.infoozamowieniu p{
+    text-align: justify;
+}
+
+.in1zam{
+    width: 50vw;
+    height: 4vh;;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5vh;
+    border: solid 1px deeppink;
+}
+
+.btnformzam{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5%;
+    background-color:hotpink;
+    color: white;
+    box-shadow: none;
+    border-radius: 20px;
+    margin-top: 2vh;
+    width: 30vh;
+    border-style: none;
+    margin-bottom: 20px;
+}
+
+.btnformzam:hover{
+    background-color: #d70674;
+    transition: ease 1s;
+}

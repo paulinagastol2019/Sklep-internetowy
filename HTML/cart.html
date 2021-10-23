@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Twój sklep online</title>
+    <!-- bootstrap - CDN biblioteka styli  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   
+    <!-- owlcarousel2, biblioteka, slaidery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- font awesome, ikony - czcionki -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- style css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="header">
+  <div class="login"><a href="#">Obserwowane(0)</a> <a href="#">Login</a></div>
+</header>
+  <!-- nawigacja bootstrap - style and style css -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="discribe" href="#">Twój sklep internetowy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Produkty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kategorie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <!--koszyk i ilosc zawartosci-->
+        <form action="#" class="form">
+            <a href="#" class="py-2 rounded-pill color-white-bg">
+                <span class="text-secondary"><i class="fas fa-shopping-cart"></i></span>
+                <span class="text-secondary bg-light">0</span>
+            </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--skecja zakupu-->
+<section id="cart" class="py-3">
+    <div class="container-fluid w-75">
+        <h5 class="font-roboto font-size-20">Koszyk</h5>
+
+        <!-- produkty-->
+        <div class="row">
+            <div class="col-sm-9">
+                <!--pierwszy produkt-->
+                <div class="row border-top py-3 mt-3">
+                    <div class="col-sm-2">
+                        <img src="../images/product1.jpg" style="height: 120px;" alt="koszyk" class="img-fluid">
+                    </div>
+                    <div class="col-sm-8">
+                        <h5 class="font-roboto font-size-20">Płyn dezynfekujący</h5>
+                        <small>by H Company</small>
+                        <div class="d-flex">
+                            <div class="rating text-warning font-size-10">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+                              </div>
+                        </div>
+
+                        <!-- pierwszy amount-->
+                        <div class="amnt d-flex pt-2">
+                            <div class="d-flex font-roboto w-25">
+                                <button class="amnt-up border px-1 bg-light" data-id="pro1"><i class="fas fa-angle-up"></i></button>
+                                 <input type="text" data-id="pro1" class="amnt_input border w-100 bg-light" disabled value="1" placeholder="1">
+                                 <button data-id="pro1" class="amnt-down border px-1 bg-light"><i class="fas fa-angle-down"></i></button>
+                            </div>
+                            <button type="submit" class="btn font-roboto text-danger px-3 border-right">Usuń z koszyka</button>
+                          </div>
+                        <!-- koniec amount-->
+
+                     <!--cena-->     
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="font-size-20 text-dark font-roboto">
+                        <span class="price">45,50zł</span>
+                      </div>
+                    </div>
+                </div>
+
+                 <!-- drugi produkt-->
+                 <div class="row border-top py-3 mt-3">
+                  <div class="col-sm-2">
+                      <img src="../images/product2.jpg" style="height: 120px;" alt="koszyk" class="img-fluid">
+                  </div>
+                  <div class="col-sm-8">
+                      <h5 class="font-roboto font-size-20">Komplet ręczników</h5>
+                      <small>by H Company</small>
+                      <div class="d-flex">
+                          <div class="rating text-warning font-size-10">
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+                            </div>       
+                      </div>
+
+                      <!-- drugi amount - narazie niema data-id--> 
+                      <div class="amnt d-flex pt-2">
+                          <div class="d-flex font-roboto w-25">
+                              <button class="amnt-up border px-1 bg-light"><i class="fas fa-angle-up"></i></button>
+                               <input type="text" class="amnt_input border w-100 bg-light" disabled value="1" placeholder="1">
+                               <button class="amnt-down border px-1 bg-light"><i class="fas fa-angle-down"></i></button>
+                          </div>
+                          <button type="submit" class="btn font-roboto text-danger px-3 border-right">Usuń z koszyka</button>                         
+                      </div>
+                       <!-- koniec drugi amount-->
+
+                  </div>
+                  <div class="col-sm-2 text-right">
+                    <div class="font-size-20 text-dark font-roboto">
+                      <span class="price">45,50zł</span>
+                    </div>
+                  </div>
+              </div>
+
+                <!-- podsumowanie koszyka-->
+                <div>
+                  <div class="col-sm-3">
+                    <div class="sub-total border text-center mt-2">
+                      <h6 class="font-size-12 font-rale text-success py-3">Podsumowanie zamówienia</h6>
+                      <div class="border-top py-4">
+                        <h5 class="font-roboto font-size-20">Ilość produktów w koszyku (2szt.):&nbsp;<span class="text-danger"><span class="text-danger" id="deal-price">45,50zł</span></span></h5>
+                        <button type="submit" class="btn btn-warning mt-3">Złóż zamówienie</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    </div>
+        </div>
+    </div>
+</section>>
+  <!--produkty polecane - style bootstrap-->
+  <section class="recom">
+    <div class="container py-5">
+      <h4 class="font-roboto font-size-10">Polecane</h4>
+      <hr> <!-- wyjaśnić-->
+
+      <!-- owl carousel 2 - produkty-->
+    <div class="owl-carousel owl-theme">
+      <div class="item py-2">
+        <div class="product font-raleway">
+          <a href="#"><img src="../images/product1.jpg" alt="płyn dezynfekujący" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Płyn dezynfekujący</h6>
+            <div class="rating text-warning font-size-10">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+            </div>
+            <div class="price py-2">
+              <span>45,50zł</span>
+            </div>
+            <button type="submit" class="btn btn-warning font-size-10">Dodaj do koszyka</button>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-raleway">
+          <a href="#"><img src="../images/product2.jpg" alt="ręczniki" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Komplet ręczników</h6>
+            <div class="rating text-warning font-size-10">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+            </div>
+            <div class="price py-2">
+              <span>99,99zł</span>
+            </div>
+            <button type="submit" class="btn btn-warning font-size-10">Dodaj do koszyka</button>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-raleway">
+          <a href="#"><img src="../images/product3.jpg" alt="mydło" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Mydło - różne kształty</h6>
+            <div class="rating text-warning font-size-10">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+            </div>
+            <div class="price py-2">
+              <span>7,99zł</span>
+            </div>
+            <button type="submit" class="btn btn-warning font-size-10">Dodaj do koszyka</button>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-raleway">
+          <a href="#"><img src="../images/product4.jpg" alt="maseczki jednorazowe" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Maseczki</h6>
+            <div class="rating text-warning font-size-10">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+            </div>
+            <div class="price py-2">
+              <span>2,50zł/ 1szt.</span>
+            </div>
+            <button type="submit" class="btn btn-warning font-size-10">Dodaj do koszyka</button>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-raleway">
+          <a href="#"><img src="../images/product5.jpg" alt="papier toaletowy" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Papier toaletowy</h6>
+            <div class="rating text-warning font-size-10">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+            </div>
+            <div class="price py-2">
+              <span>3,30zł/ 1 szt.</span>
+            </div>
+            <button type="submit" class="btn btn-warning font-size-10">Dodaj do koszyka</button>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-raleway">
+          <a href="#"><img src="../images/product6.jpg" alt="chusteczki" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Chusteczki higieniczne</h6>
+            <div class="rating text-warning font-size-10">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+            </div>
+            <div class="price py-2">
+              <span>11,80zł/ 1 szt.</span>
+            </div>
+            <button type="submit" class="btn btn-warning font-size-10">Dodaj do koszyka</button>
+          </div>
+        </div>
+      </div>
+      <div class="item py-2">
+        <div class="product font-raleway">
+          <a href="#"><img src="../images/product7.jpg" alt="ręczniki kolorowe" class="img-fluid"></a>
+          <div class="text-center">
+            <h6>Ręczniki kolorowe</h6>
+            <div class="rating text-warning font-size-10">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>  <!-- far określa ilość gwiazdek-->
+            </div>
+            <div class="price py-2">
+              <span>59,99zł</span>
+            </div>
+            <button type="submit" class="btn btn-warning font-size-10">Dodaj do koszyka</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+  </section>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 py-4 col-12">
+        <h4>Twój sklep internetowy</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-lg-4 py-4 col-12">
+        <h4>Newslatter</h4>
+        <form class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Wpisz swój adres e-mail">
+          </div>
+            <div class="col"> <button type="submit" class="btn btn-primary mb-2">Wyślij</button></div>
+        </form>
+      </div>
+      <div class="col-lg-4 col-12">
+        <h4 class="font-rubik py-4 font-size-20">Information</h4>
+        <div class="d-flex flex-column flex-wrap">
+          <a href="#" class="font-roboto font-size-10 text-white-50 pb-1">About Us</a>
+          <a href="#" class="font-roboto font-size-10 text-white-50 pb-1">Delivery Information</a>
+          <a href="#" class="font-roboto font-size-10 text-white-50 pb-1">Privacy Policy</a>
+        </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<div class="copyright text-center bg-dark text-white py-2">
+  <p class="py-1">&copy; Copyright 2021. Design By PG</p>
+</div>
+
+<!-- bootsrtap - js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <!-- jQuery i podpięcie pliku JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+<!-- owl carousel 2 JS - biblioteka-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+   <!--isotop plugin-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script src="js.js"></script>
+</body>
+</html>
